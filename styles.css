@@ -245,11 +245,19 @@ section {
 
 /* Skills Section */
 .skills-content {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center; /* Center the grid items */
+    display: block; /* Default layout for mobile/small screens */
 }
+
+/* Grid layout for desktop and larger screens */
+@media (min-width: 768px) {
+    .skills-content {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
 
 .skill-category {
     background: rgba(255, 255, 255, 0.1);
