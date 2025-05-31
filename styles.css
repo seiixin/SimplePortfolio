@@ -246,25 +246,32 @@ section {
 /* Skills Section */
 .skills-content {
     display: block; /* Default layout for mobile/small screens */
+    text-align: center; /* Center inline/inline-block content */
 }
 
 .skills-content > * {
-    margin-bottom: 1.5rem; /* Spacing between skills on small screens */
+    margin-bottom: 1.5rem; /* Spacing between items */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px; /* Optional: limit width to keep things neat */
 }
 
 /* Grid layout for desktop and larger screens */
 @media (min-width: 768px) {
     .skills-content {
         display: grid;
-        gap: 2rem; /* Grid gap between items */
+        gap: 2rem;
         grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
+        justify-items: center; /* Centers items horizontally in grid */
+        text-align: center; /* Also center text inside grid items */
     }
 
     .skills-content > * {
-        margin-bottom: 0; /* Remove bottom margin in grid layout */
+        margin-bottom: 0; /* No bottom margin needed in grid */
+        max-width: none; /* Remove width limit on bigger screens */
     }
 }
+
 
 
 .skill-category {
