@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Code Website - Booking System",
+        "description": "A comprehensive booking system for code websites with user authentication, booking management, and payment integration. Features include real-time availability checking and automated notifications.",
+        "technologies": ["PHP", "Laravel", "MySQL", "Bootstrap", "JavaScript"],
+        "image": "Project Image Placeholder",
+        "link": "#",
+        "github": "#"
+    },
+    {
+        "id": 2,
+        "title": "Bus and Seaport - E-Commerce",
+        "description": "E-commerce platform for bus and seaport transportation services. Includes ticket booking, schedule management, route optimization, and customer support system.",
+        "technologies": ["PHP", "Laravel", "React", "MySQL", "RESTful API"],
+        "image": "Project Image Placeholder",
+        "link": "#",
+        "github": "#"
+    },
+    {
+        "id": 3,
+        "title": "FlashBook - E-Book Website",
+        "description": "Digital library platform for e-books with features like user profiles, book recommendations, reading progress tracking, and social reading features.",
+        "technologies": ["PHP", "Laravel", "Vue.js", "MySQL", "Tailwind CSS"],
+        "image": "Project Image Placeholder",
+        "link": "#",
+        "github": "#"
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "category": "Front-End",
+        "skills": ["HTML", "CSS", "JavaScript", "React", "Flutter", "Tailwind"]
+    },
+    {
+        "category": "Back-End",
+        "skills": ["PHP", "Laravel", "Node.js", "Python"]
+    },
+    {
+        "category": "Database",
+        "skills": ["MySQL", "PostgreSQL"]
+    },
+    {
+        "category": "Tools",
+        "skills": ["Git", "GitHub", "Docker"]
+    }
+]

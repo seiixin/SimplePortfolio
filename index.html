@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidney Pagdanganan - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-greeting">Hi, I'm</h1>
+                <h2 class="hero-name">Sidney Pagdanganan</h2>
+                <h3 class="hero-title">Full Stack Developer</h3>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="downloadCV()">Download CV</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">Contact Me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>My name is Sidney Pagdanganan. I am a passionate and dedicated web developer with a strong focus on Laravel and PHP. I enjoy solving problems, building user-friendly web applications, and staying updated with the latest technologies. I'm comfortable working across the full stack, but my core strength lies in back-end development. I love creating clean, secure, and efficient systems that make life easier for users. Whether building APIs or optimizing database queries, I strive to grow as a developer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            <div class="skills-content" id="skills-container">
+                <!-- Skills will be loaded dynamically from JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+            </div>
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects will be loaded dynamically from JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">GET IN TOUCH</h2>
+            </div>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="number" name="number" placeholder="Number">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-send">Send</button>
+                </form>
+                <div class="contact-info">
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="contact-details">
+                        <p class="contact-phone">09464980402</p>
+                        <p class="contact-address">Calamba Misamis Oriental</p>
+                        <p class="contact-location">10300, PH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
