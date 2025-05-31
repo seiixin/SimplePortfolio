@@ -248,13 +248,21 @@ section {
     display: block; /* Default layout for mobile/small screens */
 }
 
+.skills-content > * {
+    margin-bottom: 1.5rem; /* Spacing between skills on small screens */
+}
+
 /* Grid layout for desktop and larger screens */
 @media (min-width: 768px) {
     .skills-content {
         display: grid;
-        gap: 2rem;
+        gap: 2rem; /* Grid gap between items */
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+    }
+
+    .skills-content > * {
+        margin-bottom: 0; /* Remove bottom margin in grid layout */
     }
 }
 
