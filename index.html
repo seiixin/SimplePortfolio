@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidney Pagdanganan - Full Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -35,13 +36,12 @@
                 <h2 class="hero-name">Sidney Pagdanganan</h2>
                 <h3 class="hero-title">Full Stack Developer</h3>
                 <div class="hero-buttons">
-                    <button class="btn btn-primary" onclick="downloadCV()">Download CV</button>
+                    <button class="btn btn-primary" onclick="downloadCV()">Download CV</a>
                     <button class="btn btn-secondary" onclick="scrollToSection('contact')">Contact Me</button>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
@@ -49,12 +49,16 @@
                 <h2 class="section-title">About Me</h2>
             </div>
             <div class="about-content">
+                <div class="about-image">
+                    <img src="images/pfp.jpg" alt="Sidney Pagdanganan">
+                </div>
                 <div class="about-text">
                     <p>My name is Sidney Pagdanganan. I am a passionate and dedicated web developer with a strong focus on Laravel and PHP. I enjoy solving problems, building user-friendly web applications, and staying updated with the latest technologies. I'm comfortable working across the full stack, but my core strength lies in back-end development. I love creating clean, secure, and efficient systems that make life easier for users. Whether building APIs or optimizing database queries, I strive to grow as a developer.</p>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Technical Skills Section -->
     <section id="skills" class="skills">
@@ -87,7 +91,7 @@
                 <h2 class="section-title">GET IN TOUCH</h2>
             </div>
             <div class="contact-content">
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xrbkzodb" method="POST">
                     <div class="form-group">
                         <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
                     </div>
@@ -107,10 +111,10 @@
                 </form>
                 <div class="contact-info">
                     <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Instagram">
+                        <a href="https://www.instagram.com/seiigrc/" class="social-link" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="social-link" aria-label="Facebook">
+                        <a href="https://www.facebook.com/xeixeiKi" class="social-link" aria-label="Facebook">
                             <i class="fab fa-facebook"></i>
                         </a>
                         <a href="#" class="social-link" aria-label="Twitter">
@@ -118,15 +122,22 @@
                         </a>
                     </div>
                     <div class="contact-details">
-                        <p class="contact-phone">09464980402</p>
-                        <p class="contact-address">Calamba Misamis Oriental</p>
-                        <p class="contact-location">10300, PH</p>
+                        <p class="contact-phone">09946260502</p>
+                        <p class="contact-email">sidneypagdanganan@gmail.com</p>
+                        <p class="contact-address">Citihomes, Molino 4, Bacoor, Cavite</p>
+                        <p class="contact-location">4102, PH</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+        <footer class="bg-light text-center text-lg-start mt-5 p-4 border-top">
+        <div class="container">
+            <p class="mb-1">Email: <a href="mailto:sidneypagdanganan@gmail.com">sidneypagdanganan@gmail.com</a></p>
+            <p class="mb-1">Address: Citihomes, Molino 4, Bacoor, Cavite</p>
+            <p class="mb-0">ZIP Code: 4102, PH</p>
+        </div>
+        </footer>
     <script src="script.js"></script>
 </body>
 </html>
