@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Code Website - Booking System",
+        "title": "Clinic Website - Booking System",
         "description": "A comprehensive booking system for code websites with user authentication, booking management, and payment integration. Features include real-time availability checking and automated notifications.",
         "technologies": ["PHP", "Laravel", "MySQL", "React", "RESTful API", "Tailwind CSS"],
         "image": "images/1.jpg",
