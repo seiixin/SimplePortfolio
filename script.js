@@ -477,7 +477,7 @@ function showFormMessage(message, type) {
 }
 
 function downloadCV() {
-    const cvLink = "https://drive.google.com/file/d/1Q3tIuD4A_x4eOfdSjv_d3c5HJCGg0ypI/view?usp=drive_link";
+    const cvLink = "https://drive.google.com/file/d/1Q3tIuD4A_x4eOfdSjv_d3c5HJCGg0ypI/view?usp=sharing";
     window.open(cvLink, '_blank');
 }
 
