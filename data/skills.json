@@ -12,11 +12,8 @@
         "skills": ["MySQL", "Firebase", "PostgreSQL"]
     },
     {
-        "category": "Tools",
-        "skills": ["Git", "GitHub", "Figma"]
-    },
-    {
-        "category": "Methodologies & Architecture",
-        "skills": ["Agile Development", "MVC", "MVVM"]
+        "category": "Tools & Technologies",
+        "skills": ["Git", "GitHub", "Figma", "Agile Development", "MVC", "MVVM"]
     }
+
 ]
