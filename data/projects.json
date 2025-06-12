@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Clinic Website - Booking System",
+        "description": "A comprehensive booking system for code websites with user authentication, booking management, and payment integration. Features include real-time availability checking and automated notifications.",
+        "technologies": ["PHP", "Laravel", "MySQL", "React", "RESTful API", "Tailwind CSS"],
+        "image": "images/1.jpg",
+        "link": "https://drive.google.com/file/d/1vcZ2q3bo-G4HTrku3mzruiXke-lO89TV/view?usp=drive_link",
+        "playLink": "https://drive.google.com/file/d/1vcZ2q3bo-G4HTrku3mzruiXke-lO89TV/view?usp=drive_link",
+        "githubLink": "https://github.com/seiixin/DentistBookingSystem"
+    },
+    {
+        "id": 2,
+        "title": "Sips and Sweets - E-Commerce",
+        "description": "The application features a categorized product catalog, a customer ordering system, and a secure admin dashboard for managing products, orders, and messages. RESTful API endpoints to support product filtering, order management, and contact submissions.",
+        "technologies": ["PHP", "Laravel", "React", "MySQL", "RESTful API", "Tailwind CSS"],
+        "image": "images/2.jpg",
+        "link": "https://drive.google.com/file/d/11hlo6to_qY8bB1E8-NokZu2oBdT65nTT/view?usp=drivesdk",
+        "playLink": "https://drive.google.com/file/d/11hlo6to_qY8bB1E8-NokZu2oBdT65nTT/view?usp=drivesdk",
+        "githubLink": "https://github.com/seiixin/SipsAndSweets"
+    },
+    {
+        "id": 3,
+        "title": "FlashBook - E-Book Website",
+        "description": "Digital library platform for e-books with features like user profiles, book recommendations, reading progress tracking, and social reading features.",
+        "technologies": ["PHP", "Laravel", "React", "MySQL", "RESTful API", "Tailwind CSS"],
+        "image": "images/3.jpg",
+        "link": "#"
+    }
+]

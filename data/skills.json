@@ -1,0 +1,22 @@
+[
+    {
+        "category": "Front-End",
+        "skills": ["HTML", "CSS", "JavaScript", "React", "Flutter", "Tailwind", "WPF", "PyQt5"]
+    },
+    {
+        "category": "Back-End",
+        "skills": ["PHP", "Laravel", "Node.js", "Python", "C#"]
+    },
+    {
+        "category": "Database",
+        "skills": ["MySQL", "Firebase", "PostgreSQL"]
+    },
+    {
+        "category": "Tools",
+        "skills": ["Git", "GitHub", "Figma"]
+    },
+    {
+        "category": "Methodologies & Architecture",
+        "skills": ["Agile Development", "MVC", "MVVM"]
+    }
+]

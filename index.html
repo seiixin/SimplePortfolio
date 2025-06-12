@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidney Pagdanganan - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-greeting">Hi, I'm</h1>
+                <h2 class="hero-name">Sidney Pagdanganan</h2>
+                <h3 class="hero-title">Full Stack Developer</h3>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="downloadCV()">Download CV</a>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">Contact Me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/pfp.jpg" alt="Sidney Pagdanganan">
+                </div>
+                <div class="about-text">
+                    <p>My name is Sidney Pagdanganan. I'm a passionate and dedicated software developer with experience in building mobile, desktop, and web applications. While I'm comfortable working across platforms, my primary focus is on web development—particularly using Laravel and React. I specialize in back-end development with PHP, and I enjoy crafting clean, secure, and efficient systems that solve real-world problems. Whether it's building RESTful APIs, optimizing database performance, or creating seamless user experiences, I’m always eager to learn and grow as a developer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            <div class="skills-content" id="skills-container">
+                <!-- Skills will be loaded dynamically from JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+            </div>
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects will be loaded dynamically from JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">GET IN TOUCH</h2>
+            </div>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xrbkzodb" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="number" name="number" placeholder="Number">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-send">Send</button>
+                </form>
+                <div class="contact-info">
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/seiigrc/" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/xeixeiKi" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://github.com/seiixin" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="contact-details">
+                        <p class="contact-phone">09946260502</p>
+                        <p class="contact-email">sidneypagdanganan@gmail.com</p>
+                        <p class="contact-address">Citihomes, Molino 4, Bacoor, Cavite</p>
+                        <p class="contact-location">4102, PH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <footer class="bg-light text-center text-lg-start mt-5 p-4 border-top">
+        <div class="container">
+            <p class="mb-1">Email: <a href="mailto:sidneypagdanganan@gmail.com">sidneypagdanganan@gmail.com</a></p>
+            <p class="mb-1">Address: Citihomes, Molino 4, Bacoor, Cavite</p>
+            <p class="mb-0">ZIP Code: 4102, PH</p>
+        </div>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>
