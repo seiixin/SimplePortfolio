@@ -21,10 +21,13 @@
     },
     {
         "id": 3,
-        "title": "FlashBook - E-Book Website",
-        "description": "Digital library platform for e-books with features like user profiles, book recommendations, reading progress tracking, and social reading features.",
+        "title": "HireMap - Information System",
+        "description": "web application designed to streamline job postings and application management. ",
         "technologies": ["PHP", "Laravel", "React", "MySQL", "RESTful API", "Tailwind CSS"],
         "image": "images/3.jpg",
-        "link": "#"
+        "link": "https://hiremap-production.up.railway.app/",
+        "playLink": "https://hiremap-production.up.railway.app/",
+        "githubLink": "https://github.com/seiixin/HireMap"
+
     }
 ]
