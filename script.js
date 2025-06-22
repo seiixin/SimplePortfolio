@@ -98,6 +98,8 @@ const skillIcons = {
   "MVVM": `<i class="fas fa-diagram-project" title="MVVM"></i>`,
   "MVC": `<i class="fas fa-sitemap" title="MVC"></i>`,
   "Agile Development": `<i class="fas fa-sync-alt" title="Agile Development"></i>`,
+  "Docker": `<i class="fab fa-docker" title="Docker"></i>`,
+
 
     // Custom SVG icons for missing ones
 "WPF": `

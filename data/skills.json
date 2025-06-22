@@ -13,7 +13,7 @@
     },
     {
         "category": "Tools & Technologies",
-        "skills": ["Git", "GitHub", "Figma", "Agile Development", "MVC", "MVVM"]
+        "skills": ["Git", "GitHub", "Figma", "Agile Development", "MVC", "MVVM", "Docker"]
     }
 
 ]
