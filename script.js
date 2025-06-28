@@ -107,6 +107,10 @@ const skillIcons = {
   <path fill="currentColor" d="M0 128C0 57.3 57.3 0 128 0s128 57.3 128 128-57.3 128-128 128S0 198.7 0 128z"/>
   <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-size="80" fill="white" font-family="Segoe UI">W</text>
 </svg>`,
+"Nginx": `
+<svg viewBox="0 0 256 256" width="24" height="24" title="Nginx" xmlns="http://www.w3.org/2000/svg">
+  <path fill="currentColor" d="M127.9 0L0 73.7v108.6l127.9 73.7 127.9-73.7V73.7L127.9 0zm61.6 164.3h-30.2l-29.2-49.6-29.2 49.6H71.1l56.8-97.2 61.6 97.2z"/>
+</svg>`,
 "PyQt5": `
   <svg viewBox="0 0 48 48" width="24" height="24" title="PyQt5" xmlns="http://www.w3.org/2000/svg">
     <rect x="0" y="0" width="48" height="48" rx="8" ry="8" fill="currentColor"/>
