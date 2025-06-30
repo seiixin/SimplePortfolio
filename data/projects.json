@@ -29,5 +29,14 @@
         "playLink": "https://hiremap-production.up.railway.app/",
         "githubLink": "https://github.com/seiixin/HireMap"
 
+    },
+        {
+        "id": 4,
+        "title": "Talk4U - Chat App",
+        "description": "Responsive web app built with React, Laravel & Inertia.js, featuring inbox, random chat, profile editing, and interest-based matchmaking.",
+        "technologies": ["PHP", "Laravel", "React", "MySQL", "RESTful API", "WebSocket", "Tailwind CSS"],
+        "image": "images/4.jpg",
+        "githubLink": "https://github.com/seiixin/Talk4U"
+
     }
 ]
