@@ -243,6 +243,54 @@ section {
     color: #ccc; /* light gray for readability */
 }
 
+.about-stats {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.stat-number {
+    font-size: 4rem; /* big */
+    font-weight: bold;
+    color: #ccc; /* base gray */
+    font-family: 'Arial Black'; /* similar to Bebas */
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(
+        120deg,
+        #f1f1f1 0%,
+        #ccc 30%,
+        #fff 50%,
+        #ccc 70%,
+        #f1f1f1 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 200% center;
+    }
+    100% {
+        background-position: -200% center;
+    }
+}
+
+
+.stat-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ccc; /* gray */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+}
+
 /* Skills Section */
 .skills-content {
     display: block; /* Default layout for mobile/small screens */

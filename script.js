@@ -19,7 +19,41 @@ async function initializePortfolio() {
         console.error('Error initializing portfolio:', error);
     }
 }
+// Load Clients Served
+document.addEventListener('DOMContentLoaded', () => {
+    const counter = document.querySelector('.stat-number');
+    const target = +counter.getAttribute('data-target');
+    let isCounting = false;
+    let observer;
 
+    function updateCount() {
+        const count = +counter.innerText;
+        const increment = target / 40; // adjust speed
+
+        if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            requestAnimationFrame(updateCount);
+        } else {
+            counter.innerText = target + '+';
+        }
+    }
+
+    observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !isCounting) {
+                isCounting = true;
+                updateCount();
+            } else if (!entry.isIntersecting) {
+                isCounting = false;
+                counter.innerText = '0'; // reset to 0 when out of view
+            }
+        });
+    }, {
+        threshold: 0.4 // start counting when ~40% of section is visible
+    });
+
+    observer.observe(document.querySelector('#about'));
+});
 // Load skills from JSON
 async function loadSkills() {
     try {
