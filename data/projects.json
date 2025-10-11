@@ -38,5 +38,21 @@
         "image": "images/4.jpg",
         "githubLink": "https://github.com/seiixin/Talk4U"
 
+    },
+        {
+        "id": 5,
+        "title": "CEMETERY NAV - Navigation System",
+        "description": "An innovative digital mapping solution designed to help users easily locate gravesites within cemeteries.",
+        "technologies": ["React Native", "MongoDB", "Svelte"],
+        "image": "images/5.jpg",
+        "githubLink": "https://github.com/seiixin/wtgmap"
+    },
+        {
+        "id": 6,
+        "title": "Manage Cafe - Management System",
+        "description": "A Desktop App that includes modules for cashiers, employees, and administrators, managing essential tasks such as payroll processing, payslip requests, attendance tracking, and order management",
+        "technologies": ["C#", "WPF", "MySQL", "MVVM"],
+        "image": "images/6.jpg",
+        "githubLink": "https://github.com/seiixin/hillscafemanagement"
     }
 ]
