@@ -45,6 +45,7 @@
         "description": "An innovative digital mapping solution designed to help users easily locate gravesites within cemeteries.",
         "technologies": ["React Native", "MongoDB", "Svelte"],
         "image": "images/5.jpg",
+        "playLink": "https://wtgmaps.vercel.app/graves/0444",
         "githubLink": "https://github.com/seiixin/wtgmap"
     },
         {
@@ -53,7 +54,6 @@
         "description": "A Desktop App that includes modules for cashiers, employees, and administrators, managing essential tasks such as payroll processing, payslip requests, attendance tracking, and order management",
         "technologies": ["C#", "WPF", "MySQL", "MVVM"],
         "image": "images/6.jpg",
-        "playLink": "https://wtgmaps.vercel.app/graves/0444",
         "githubLink": "https://github.com/seiixin/hillscafemanagement"
     }
 ]
