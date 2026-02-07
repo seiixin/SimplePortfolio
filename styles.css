@@ -31,7 +31,7 @@ body {
     font-family: var(--font-family);
     line-height: 1.6;
     color: hsl(var(--text-light));
-    background: linear-gradient(135deg, hsl(var(--dark-black)) 0%, hsl(var(--secondary-gray)) 100%);
+    background: linear-gradient(135deg, hsl(210, 40%, 15%) 0%, hsl(210, 50%, 25%) 100%);
     min-height: 100vh;
 }
 
@@ -222,8 +222,8 @@ section {
 }
 
 .about-image img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 50%;
     border: solid rgba(0, 0, 0, 0.8); /* semi-transparent black */

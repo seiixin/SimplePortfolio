@@ -9,11 +9,11 @@
     },
     {
         "category": "Database",
-        "skills": ["MySQL", "Firebase", "PostgreSQL"]
+        "skills": ["MySQL", "Firebase", "PostgreSQL", "MongoDB"]
     },
     {
         "category": "Tools & Technologies",
-        "skills": ["Git", "GitHub", "Figma", "Agile Development", "MVC", "MVVM", "Docker", "Nginx"]
+        "skills": ["Git", "GitHub", "Figma", "Agile Development", "MVC", "MVVM", "Docker", "Nginx", "Hostinger", "AWS"]
     }
 
 ]
