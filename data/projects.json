@@ -2,7 +2,7 @@
     {
         "id": 7,
         "title": "GIS Systems",
-        "description": "A Desktop App that includes modules for cashiers, employees, and administrators, managing essential tasks such as payroll processing, payslip requests, attendance tracking, and order management",
+        "description": "GIS (Geographic Information Systems) is a powerful tool for capturing, storing, analyzing, and visualizing spatial and geographic data. It enables users to interpret data in the form of maps, reports, and charts, which helps in decision-making across various industries, such as urban planning, environmental monitoring, and disaster management.",
         "technologies": ["React Native", "Express", "Laravel", "React JS", "MySQL", "MVC", "Cross Platform", "Hostinger"],
         "image": "images/7.jpg"
     },
