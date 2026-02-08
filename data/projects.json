@@ -17,7 +17,7 @@
         "id": 9,
         "title": "CRYPTO WEBSITES",
         "description": "Crypto Websites for Gaming and Digital Assets are platforms that bridge the gap between cryptocurrency and gaming experiences. These websites allow users to engage with blockchain-based games, where in-game assets, such as virtual land, characters, or items, are represented by NFTs (Non-Fungible Tokens) and can be bought, sold, or traded using cryptocurrency.",
-        "technologies": ["React JS", "Express", "MySQL", "PHP Runner", "Hostinger"],
+        "technologies": ["React JS", "Laravel", "Breeze", "MySQL", "Hostinger", "WebSocket"],
         "image": "images/9.jpg"
     },
     {
