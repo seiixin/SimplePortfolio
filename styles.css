@@ -412,6 +412,12 @@ section {
     width: 100%;
 }
 
+@media (max-width: 768px) {
+    .bio-card {
+        padding: 1.5rem; /* Reduce padding on mobile */
+    }
+}
+
 .bio-card p {
     color: hsl(var(--secondary-gray));
     font-size: 1rem;
@@ -467,8 +473,8 @@ section {
 
 .image-wrapper {
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
