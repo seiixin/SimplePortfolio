@@ -15,7 +15,7 @@
         <div class="nav-container">
             <div class="nav-links">
                 <a href="#home" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">About</a>
+                <a href="#about" class="nav-link desktop-hidden">About</a> <!-- Add class to hide on desktop -->
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#contact" class="nav-link">Contact</a>
@@ -28,39 +28,34 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <!-- Main Hero Section (Combined) -->
+    <section id="home" class="main-hero">
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-greeting">Hi, I'm</h1>
-                <h2 class="hero-name">Sidney Pagdanganan</h2>
-                <h3 class="hero-title">Full Stack Developer</h3>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary" onclick="downloadCV()">Download CV</a>
-                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">Contact Me</button>
+            <!-- Flattened Structure for easier mobile reordering -->
+            <div class="hero-layout">
+                <!-- 1. Intro Block -->
+                <div class="intro-block">
+                    <h2 class="hero-name">Sidney Pagdanganan</h2>
+                    <h3 class="hero-title">Full Stack Developer</h3>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="downloadCV()">Download CV</button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">Contact Me</button>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="images/pfp-removebg.png" alt="Sidney Pagdanganan">
+                
+                <!-- 2. Visual (Image) -->
+                <div class="hero-visual">
+                    <div class="image-wrapper">
+                        <img src="images/pfp-removebg.png" alt="Sidney Pagdanganan">
+                    </div>
                 </div>
-                <div class="about-text">
+
+                <!-- 3. Bio Card -->
+                <div class="bio-card" id="about"> <!-- Added id for mobile nav target if needed, though mostly handled by scroll -->
                     <p>
-                    I’m Sidney Pagdanganan, a Full Stack Developer experienced in Laravel, MERN stack, and mobile app development. I specialize in building scalable, high-performance applications and love solving complex problems. With a strong background in leading projects across e-commerce, crypto, and GIS systems, I focus on creating seamless user experiences and reliable solutions.
-                    <br />
-                    <br />
-                    I’m passionate about optimizing performance, mentoring teams, and staying ahead with new technologies. Currently, I’m pursuing a degree in Information Technology while honing my skills to deliver value-driven projects.
+                    A Full Stack Developer skilled in Laravel, the MERN stack, and mobile app development, focused on building scalable applications, optimizing performance, and solving complex problems. I have led projects in e-commerce, booking systems, crypto, and GIS systems, delivering reliable, user-friendly solutions while continuously improving through collaboration and learning.
                     </p>
-                    <br />
-                        <div class="about-stats">
+                    <div class="about-stats">
                         <div class="stat-number" data-target="50">0</div>
                         <div class="stat-label">Clients Served</div>
                     </div>
@@ -78,9 +73,8 @@
             <div class="section-header">
                 <h2 class="section-title">Technical Skills</h2>
             </div>
-            <div class="skills-content" id="skills-container">
-                <!-- Skills will be loaded dynamically from JSON -->
-            </div>
+            <!-- Skills container will be populated with multiple sliders by JS -->
+            <div id="skills-container"></div>
         </div>
     </section>
 

@@ -52,7 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
         threshold: 0.4 // start counting when ~40% of section is visible
     });
 
-    observer.observe(document.querySelector('#about'));
+    // Observe the main-hero section instead of the removed #about section
+    const heroSection = document.querySelector('#home');
+    if (heroSection) {
+        observer.observe(heroSection);
+    }
 });
 // Load skills from JSON
 async function loadSkills() {
@@ -164,36 +168,124 @@ function renderSkills() {
     const skillsContainer = document.getElementById('skills-container');
     
     if (!skillsData || skillsData.length === 0) {
-        skillsContainer.innerHTML = '<div class="loading">No skills data available</div>';
+        if(skillsContainer) skillsContainer.innerHTML = '<div class="loading">No skills data available</div>';
         return;
     }
 
-    const skillsHTML = skillsData.map(category => `
-        <div class="skill-category">
+    // Clear container first
+    skillsContainer.innerHTML = '';
+    // Reset container class
+    skillsContainer.className = '';
+
+    // Create cards
+    skillsData.forEach((category, index) => {
+        // Create category card
+        const card = document.createElement('div');
+        card.className = `skill-category ${index === 0 ? 'active' : ''}`;
+        card.dataset.index = index;
+
+        // Skills HTML
+        const skillsHTML = category.skills.map(skill => `
+            <span class="skill-tag">
+                <span class="skill-icon">${skillIcons[skill] || '<i class="fas fa-code"></i>'}</span>
+                ${skill}
+            </span>
+        `).join('');
+
+        card.innerHTML = `
             <h3>
                 <span class="category-icon">${categoryIcons[category.category] || ''}</span>
                 ${category.category}
             </h3>
             <div class="skill-tags">
-                ${category.skills.map(skill => `
-                    <span class="skill-tag" data-skill="${skill}">
-                        <span class="skill-icon">${skillIcons[skill] || ''}</span>
-                        ${skill}
-                    </span>
-                `).join('')}
+                ${skillsHTML}
             </div>
-        </div>
-    `).join('');
+        `;
 
-    skillsContainer.innerHTML = skillsHTML;
-
-    // Add click events to skill tags
-    document.querySelectorAll('.skill-tag').forEach(tag => {
-        tag.addEventListener('click', function() {
-            const skill = this.getAttribute('data-skill');
-            highlightSkill(skill);
-        });
+        skillsContainer.appendChild(card);
     });
+
+    // Create indicators
+    const indicatorsContainer = document.createElement('div');
+    indicatorsContainer.className = 'carousel-indicators';
+    skillsData.forEach((_, index) => {
+        const indicator = document.createElement('div');
+        indicator.className = `indicator ${index === 0 ? 'active' : ''}`;
+        indicator.addEventListener('click', () => setActiveSlide(index));
+        indicatorsContainer.appendChild(indicator);
+    });
+    
+    // Create Navigation Arrows (Simple Box Look)
+    const prevBtn = document.createElement('button');
+    prevBtn.className = 'skill-nav prev';
+    prevBtn.innerHTML = '<i class="fas fa-chevron-left"></i>';
+    prevBtn.addEventListener('click', () => {
+        let prevIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        setActiveSlide(prevIndex);
+    });
+
+    const nextBtn = document.createElement('button');
+    nextBtn.className = 'skill-nav next';
+    nextBtn.innerHTML = '<i class="fas fa-chevron-right"></i>';
+    nextBtn.addEventListener('click', () => {
+        let nextIndex = (currentIndex + 1) % totalSlides;
+        setActiveSlide(nextIndex);
+    });
+
+    // Append arrows to the container
+    skillsContainer.appendChild(prevBtn);
+    skillsContainer.appendChild(nextBtn);
+
+    // Append indicators after the container
+    skillsContainer.parentNode.insertBefore(indicatorsContainer, skillsContainer.nextSibling);
+
+    // Auto-play logic
+    let currentIndex = 0;
+    const totalSlides = skillsData.length;
+    let autoPlayInterval;
+
+    function setActiveSlide(index) {
+        currentIndex = index;
+        const cards = document.querySelectorAll('.skill-category');
+        const indicators = document.querySelectorAll('.indicator');
+        
+        // Calculate indices
+        const prevIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        const nextIndex = (currentIndex + 1) % totalSlides;
+
+        cards.forEach((card, i) => {
+            // Reset classes
+            card.className = 'skill-category'; 
+            
+            if (i === currentIndex) {
+                card.classList.add('active');
+            } else if (i === prevIndex) {
+                card.classList.add('prev');
+            } else if (i === nextIndex) {
+                card.classList.add('next');
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+
+        // Update Indicators
+        indicators.forEach((ind, i) => {
+            ind.classList.toggle('active', i === currentIndex);
+        });
+        
+        // Reset timer on manual interaction
+        clearInterval(autoPlayInterval);
+        startAutoPlay();
+    }
+
+    function startAutoPlay() {
+        autoPlayInterval = setInterval(() => {
+            let nextIndex = (currentIndex + 1) % totalSlides;
+            setActiveSlide(nextIndex);
+        }, 3000); // Change every 3 seconds
+    }
+
+    startAutoPlay();
 }
 function renderProjects() {
     const projectsContainer = document.getElementById('projects-container');
@@ -317,25 +409,23 @@ function setupMobileMenu() {
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const navLinks = document.querySelector('.nav-links');
 
-    mobileMenuToggle.addEventListener('click', function() {
-        navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-        navLinks.style.position = 'absolute';
-        navLinks.style.top = '100%';
-        navLinks.style.left = '0';
-        navLinks.style.right = '0';
-        navLinks.style.flexDirection = 'column';
-        navLinks.style.background = 'rgba(31, 31, 54, 0.98)';
-        navLinks.style.padding = '1rem';
-        navLinks.style.borderRadius = '0 0 12px 12px';
-    });
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('active');
+        });
+    }
 
-    // Close mobile menu when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('.nav-container')) {
-            if (window.innerWidth <= 768) {
-                navLinks.style.display = 'none';
+    // Close mobile menu when a link is clicked
+    const mobileNavLinks = document.querySelectorAll('.nav-link');
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            // Check if we are in mobile view (navLinks has active class usually indicates visibility toggled)
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
             }
-        }
+        });
     });
 }
 
