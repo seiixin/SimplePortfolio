@@ -1,20 +1,20 @@
 [
     {
-        "id": 7,
+        "id": 1,
         "title": "GIS Systems",
         "description": "GIS (Geographic Information Systems) is a powerful tool for capturing, storing, analyzing, and visualizing spatial and geographic data. It enables users to interpret data in the form of maps, reports, and charts, which helps in decision-making across various industries, such as urban planning, environmental monitoring, and disaster management.",
         "technologies": ["React Native", "Express", "Laravel", "React JS", "MySQL", "MVC", "Cross Platform", "Hostinger"],
         "image": "images/7.jpg"
     },
     {
-        "id": 8,
+        "id": 2,
         "title": "E-Commerce and POS Systems",
         "description": "E-Commerce and POS (Point of Sale) Systems are essential tools for managing and streamlining retail businesses. They enable businesses to sell products online (e-commerce) and process transactions in-store (POS), improving efficiency and customer experience.",
         "technologies": ["React JS", "Express", "MySQL", "PHP Runner", "Hostinger"],
         "image": "images/8.jpg"
     },
     {
-        "id": 9,
+        "id": 3,
         "title": "CRYPTO WEBSITES",
         "description": "Crypto Websites for Gaming and Digital Assets are platforms that bridge the gap between cryptocurrency and gaming experiences. These websites allow users to engage with blockchain-based games, where in-game assets, such as virtual land, characters, or items, are represented by NFTs (Non-Fungible Tokens) and can be bought, sold, or traded using cryptocurrency.",
         "technologies": ["React JS", "Laravel", "Breeze", "MySQL", "Hostinger", "WebSocket"],
@@ -42,7 +42,7 @@
         "image": "images/6.jpg"
     },
         {
-        "id": 1,
+        "id": 7,
         "title": "Clinic Website - Booking System",
         "description": "A comprehensive booking system for code websites with user authentication, booking management, and payment integration. Features include real-time availability checking and automated notifications.",
         "technologies": ["PHP", "Laravel", "MySQL", "React", "RESTful API", "Tailwind CSS"],
@@ -50,7 +50,7 @@
         "link": "https://drive.google.com/file/d/1vcZ2q3bo-G4HTrku3mzruiXke-lO89TV/view?usp=drive_link",
         "playLink": "https://drive.google.com/file/d/1vcZ2q3bo-G4HTrku3mzruiXke-lO89TV/view?usp=drive_link"    },
     {
-        "id": 2,
+        "id": 8,
         "title": "Sips and Sweets - E-Commerce",
         "description": "The application features a categorized product catalog, a customer ordering system, and a secure admin dashboard for managing products, orders, and messages. RESTful API endpoints to support product filtering, order management, and contact submissions.",
         "technologies": ["PHP", "Laravel", "React", "MySQL", "RESTful API", "Tailwind CSS"],
@@ -59,7 +59,7 @@
         "playLink": "https://drive.google.com/file/d/11hlo6to_qY8bB1E8-NokZu2oBdT65nTT/view?usp=drivesdk"
     },
     {
-    "id": 3,
+    "id": 9,
     "title": "CEMETERY NAV - Navigation System",
     "description": "An innovative digital mapping solution designed to help users easily locate gravesites within cemeteries.",
     "technologies": ["React Native", "MongoDB", "Svelte", "Cross Platform", "Express", "MERN Stack", "Vercel"],

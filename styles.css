@@ -410,11 +410,21 @@ section {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     position: relative;
     width: 100%;
+    max-width: 100%; /* Ensure no overflow */
 }
 
 @media (max-width: 768px) {
     .bio-card {
-        padding: 1.5rem; /* Reduce padding on mobile */
+        padding: 1.5rem;
+        width: 100%;
+    }
+    
+    .about-stats {
+        justify-content: center;
+    }
+    
+    .stat-number {
+        font-size: 3rem;
     }
 }
 
